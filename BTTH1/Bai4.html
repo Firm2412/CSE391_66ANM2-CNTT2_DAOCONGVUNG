@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employee Detail</title>
+
+<style>
+    .top-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.nav-arrow {
+  width: 26px;
+  height: 22px;
+  border: 1px solid #777;
+  background: #eee;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-arrow:hover {
+  background: #ddd;
+}
+
+body{
+  font-family: Tahoma, Arial, sans-serif;
+  background:#efefef;
+  font-size:13px;
+}
+
+.container{
+  width:780px;
+  margin:20px auto;
+  background:#fff;
+  border:1px solid #cfcfcf;
+  padding:15px 20px;
+}
+
+.section{
+  margin-top:20px;
+}
+
+.section-title{
+  font-weight:bold;
+  border-bottom:1px solid #999;
+  padding-bottom:3px;
+  margin-bottom:10px;
+}
+
+.row{
+  display:flex;
+  align-items:center;
+  margin-bottom:8px;
+}
+
+.label{
+  width:150px;
+}
+
+input[type="text"],
+input[type="email"],
+select{
+  width:360px;
+  padding:4px;
+  border:1px solid #888;
+  font-size:13px;
+}
+
+input[readonly]{
+  background:#eee;
+}
+
+.radio-group label,
+.checkbox-group label{
+  margin-right:15px;
+}
+
+textarea{
+  width:520px;
+  height:130px;
+  border:1px solid #888;
+  padding:6px;
+  font-size:13px;
+  resize:none;
+}
+
+.captcha{
+  font-family: "Courier New", monospace;
+  font-size:22px;
+  letter-spacing:4px;
+  margin-right:10px;
+}
+
+.small{
+  font-size:11px;
+  color:#555;
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:20px;
+}
+
+.buttons button{
+  padding:4px 12px;
+  margin-left:6px;
+  font-size:13px;
+  border:1px solid #777;
+  background:#e5e5e5;
+  cursor:pointer;
+}
+
+.buttons button:hover{
+  background:#d6d6d6;
+}
+.gender-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.gender-box label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+.shift-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.shift-box label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+</style>
+</head>
+
+
+
+<div class="container">
+
+  <!-- BASIC INFO -->
+  <div class="section">
+    <div class="section-title">Basic Info</div>
+
+    <div class="row">
+      <div class="label">Employee ID</div>
+      <input type="text" value="9" readonly>
+    </div>
+
+    <div class="row">
+      <div class="label">Last Name</div>
+      <input type="text" value="Dodsworth">
+    </div>
+
+    <div class="row">
+      <div class="label">First Name</div>
+      <input type="text" value="Anne">
+    </div>
+
+    <div class="row">
+  <div class="label">Gender</div>
+  <div class="gender-box">
+    <label><input type="radio" name="gender"> Male</label>
+    <label><input type="radio" name="gender"> Female</label>
+    <label><input type="radio" name="gender"> XXX</label>
+    <label><input type="radio" name="gender" checked> ZZZ</label>
+  </div>
+</div>
+
+
+    <div class="row">
+      <div class="label">Title</div>
+      <input type="text" value="Sales Representative">
+    </div>
+
+    <div class="row">
+      <div class="label">Suffix</div>
+      <input type="text" value="Ms.">
+    </div>
+
+    <div class="row">
+      <div class="label">BirthDate</div>
+      <input type="text" value="1969-07-02 00:00:00">
+    </div>
+
+    <div class="row">
+      <div class="label">HireDate</div>
+      <input type="text" value="1994-11-15 00:00:00">
+    </div>
+
+    <div class="row">
+      <div class="label">SSN # (if applicable)</div>
+      <input type="text">
+    </div>
+
+    <div class="row">
+      <div class="label">Reports To</div>
+      <select>
+        <option>Buchanan</option>
+        <option>Fuller</option>
+        <option>Leverling</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- CONTACT INFO -->
+  <div class="section">
+    <div class="section-title">Contact Info</div>
+
+    <div class="row">
+      <div class="label">Email</div>
+      <input type="email" value="name@example.com">
+    </div>
+
+    <div class="row">
+      <div class="label">Address</div>
+      <input type="text" value="7 Houndstooth Rd.">
+    </div>
+
+    <div class="row">
+      <div class="label">City</div>
+      <input type="text" value="London">
+    </div>
+
+    <div class="row">
+      <div class="label">Region</div>
+      <input type="text">
+    </div>
+
+    <div class="row">
+      <div class="label">Postal Code</div>
+      <input type="text" value="WG2 7LT">
+    </div>
+
+    <div class="row">
+      <div class="label">Country</div>
+      <select>
+        <option>Russian Federation</option>
+        <option>United Kingdom</option>
+        <option>USA</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <div class="label">US Home Phone</div>
+      <input type="text" value="(234)234-2342">
+    </div>
+
+    <div class="row">
+      <div class="label">Photo</div>
+      <input type="text" value="EmpID9.bmp">
+    </div>
+  </div>
+
+  <!-- OPTIONAL INFO -->
+  <div class="section">
+    <div class="section-title">Optional Info</div>
+
+    <div class="row">
+      <div class="label">Notes</div>
+      <textarea>Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.ZZZ</textarea>
+    </div>
+<div class="row">
+  <div class="label">Preferred Shift</div>
+  <div class="shift-box">
+    <label>
+      <input type="radio" name="shift">
+      Regular
+    </label>
+    <label>
+      <input type="radio" name="shift" checked>
+      Gravy Yard
+    </label>
+  </div>
+</div>
+    <div class="row">
+      <div class="label">Active?</div>
+      <input type="checkbox" checked>
+    </div>
+
+    <div class="row">
+      <div class="label">Are you human?</div>
+      <span class="captcha">TIDAWO</span>
+      <span class="small">Click to change</span>
+    </div>
+
+    <div class="row">
+      <div class="label"></div>
+      <input type="text">
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span class="small">* required</span>
+
+    <div class="buttons">
+      <button>Submit</button>
+      <button>Cancel</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
