@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe Layout</title>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f4f4f4;
+}
+.section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 60px 40px;
+  border-left: 4px solid #9ed2e6;
+  border-right: 4px solid #9ed2e6;
+  border-bottom: 4px solid #9ed2e6;
+  background-color: #efefef;
+}
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 70px;
+  color: #333;
+  line-height: 1.4;
+}
+.content {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+.card {
+  background: #f8f8f8;
+  padding: 40px;
+  width: 40%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+.card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+.author {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.role {
+  font-size: 13px;
+  color: #6c8ebf;
+}
+.text-content {
+  width: 60%;
+}
+.text-content p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555;
+}
+.text-content strong {
+  font-weight: 700;
+  color: #333;
+}
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+  .card,
+  .text-content {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<section class="section">
+  <h2 class="title">
+    Wireframe Connects the Underlying <br>
+    Conceptual Structure
+  </h2>
+  <div class="content">
+    <div class="card">
+      <h3>Wireframe Connects the Underlying Conceptual Structure</h3>
+      <p>
+        Far far away, behind the word mountains, far from the countries
+        Vokalia and Consonantia, there live the blind texts far from the
+        countries Vokalia and Consonantia, there live the blind texts.
+      </p>
+      <div class="author">Louie Jie Mahusay</div>
+      <div class="role">CEO, Founder</div>
+    </div>
+
+    <div class="text-content">
+      <p>
+        Far far away, behind the word mountains, far from the countries Vokalia
+        and Consonantia, there live the blind texts far from the countries
+        Vokalia and Consonantia, there live the blind texts.
+      </p>
+      <p>
+        <strong>
+        Far far away, behind the word mountains, far from the countries
+        Vokalia and Consonantia, there live the blind texts far from the
+        countries Vokalia and Consonantia, there live the blind texts.
+        </strong>
+      </p>
+      <p>
+        Far far away, behind the word mountains, far from the countries Vokalia
+        and Consonantia, there live the blind texts far from the countries
+        Vokalia and Consonantia, there live the blind texts. Far away,
+        behind the word mountains, far from the countries Vokalia and
+        Consonantia, there live the blind texts far from the countries
+        Vokalia and Consonantia, there live the blind texts.
+      </p>
+    </div>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Travel Goals</title>
+    <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#3d1640;
+}
+
+/* HEADER */
+header{
+    background:url("../Downloads/assets/extra-files/ocean.jpg");
+    background-size:cover;
+    background-position:center;
+    height:500px;
+    position:relative;
+    color:white;
+}
+
+nav{
+  list-style: none;
+    display:flex;
+    justify-content:flex-end;
+    padding:2px;
+}
+nav span a{
+    color:#ffe066;
+    text-decoration:none;
+}
+#page-logo a{
+    font-weight:bold;
+    font-size:24px;
+    color:#ffe066;
+    text-decoration:none;
+}
+
+/* HERO */
+#hero{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:rgba(0,0,0,0.6);
+    padding:40px 60px;
+    text-align:center;
+    border-radius:6px;
+}
+#hero h1{
+    margin-bottom:10px;
+}
+
+#hero p{
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+#hero button{
+    background:#ffe066;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* MAIN */
+main{
+    background:#d7e6ea;
+    padding:40px;
+}
+
+#highlights{
+    text-align:center;
+}
+
+#destinations{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+}
+
+.destination{
+    width:300px;
+}
+
+.destination img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius:6px;
+}
+
+.destination p{
+    margin-top:8px;
+    font-size:14px;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    padding:20px;
+    text-align:center;
+}
+
+footer ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+footer img{
+    width:30px;
+}
+
+</style>
+
+  </head>
+  <body>
+    <header>
+      <div id="page-logo">
+        <a href="/index.html">Travel Goals</a>
+      </div>
+      <nav>
+        <ul>
+          <span><a href="/places.html">Destinations</a></span>
+          <span><a href="">About</a></span>
+        </ul>
+      </nav>
+      <section id="hero">
+        <div id="hero-content">
+          <h1>Joe's Travel Page</h1>
+          <p>Let's explore the world together!</p>
+          <a href="/places.html"><button>Discover places</button></a>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="highlights">
+        <h2>Highlights</h2>
+        <ul id="destinations">
+          <li class="destination">
+            <img
+              src="../Downloads/assets/extra-files/cities/miami.jpg"
+              alt="Miami streets on sunny day"
+            />
+            <p>Miami <strong style="color:rgb(22, 212, 140);">USA</strong></p>
+          </li>
+          <li class="destination">
+            <img
+              src="../Downloads/assets/extra-files/cities/munich.jpg"
+              alt="Munich stadium in winter"
+            />
+            <p>Munich <strong style="color: rgb(22, 212, 140);">Germany</strong></p>
+          </li>
+          <li class="destination">
+            <img
+              src="../Downloads/assets/extra-files/cities/barcelona.jpg"
+              alt="Palm beach in Barcelona"
+            />
+            <p>Barcelona <strong style="color: rgb(22, 212, 140);">Spain</strong></p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com">
+            <img src="../Downloads\assets\extra-files\icons\insta.png" alt="Instagram logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com">
+            <img src="../Downloads\assets\extra-files\icons\facebook.png" alt="Facebook logo"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
